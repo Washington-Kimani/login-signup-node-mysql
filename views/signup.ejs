@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+    <section class="container forms">
+        <div class="form signup">
+            <header>Singup</header>
+            <div class="form-content">
+                <form action="/signup" method="post" autocomplete="off">
+                    <p class="error"></p>
+                    <div class="field input-field">
+                        <input placeholder="Name" name="username" type="text" id="input" required>
+                    </div>
+                    <div class="field input-field">
+                        <input placeholder="Email" name="email" type="email" id="input" required>
+                    </div>
+                    <div class="field input-field">
+                        <input placeholder="Password" name="passcode" type="password" id="inputField" required>
+                        <i class="fas fa-eye" id="showIcon" onclick="toogleIcon()"></i> <i class="fas fa-eye-slash" id="hideIcon" onclick="toogleIcon()"></i>
+                    </div>
+                    <div class="field input-field">
+                        <input class="button" type="submit">
+                    </div>
+                    <a href="/">Go back to login page</a>
+                </form>
+            </div>
+            <div class="line"></div>
+                <div class="media-options">
+                    <a href="#" class="field google">
+                        <img src="/images/google.png" alt="" class="google-img">
+                        <span>Signup with Google</span>
+                    </a>
+                </div>
+        </div>
+    </section>   
+</body>
+<script src="/js/signlog.js"></script>
+</html>

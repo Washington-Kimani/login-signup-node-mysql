@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .main{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #583ff6, #243b55)
+        }
+        .container{
+            width: 450px;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, #071a52, #243b55);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+            border-radius: 5%;
+        }
+        .container section {
+            color: #fff;
+            text-align: center;
+        }
+        .container section h1{
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <section>
+                <h1>Welcome home</h1>
+                <p><%= data %></p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

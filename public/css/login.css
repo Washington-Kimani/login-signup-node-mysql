@@ -1,0 +1,162 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #583ff6, #243b55);
+    column-gap: 30px;
+}
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background: linear-gradient(-45deg, #071a52, #243b55);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+.forms.show-signup .form.login{
+    opacity: 0;
+    pointer-events: none;
+}
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+}
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #CACACA;
+    background: #243b55;
+}
+.field input:not([type="submit"]):focus, form input:not([type="submit"]):valid {
+	background-color: #fff;
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+#showIcon,
+#hideIcon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+.fa-eye-slash {
+    display: none;
+    color: #efefef;
+}
+.field .button{
+    color: #fff;
+    border: 1px solid #03e9f4;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field .button:hover{
+    background-color: #386d6f;
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+.form a{
+    color: #0171d3;
+    text-decoration: none;
+}
+.form-content a:hover{
+    text-decoration: underline;
+}
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #d4d4d4;
+}
+.line::before{
+    content: 'Or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+}
+.media-options a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.error{
+    background: #fff;
+    color: red;
+    padding: 5% auto;
+    border-radius: 3px;
+  }
+img.google-img{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+img.google-img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+a.google{
+    border: 1px solid #CACACA;
+}
+a.google span{
+    font-weight: 500;
+    opacity: 0.6;
+    color: #232836;
+}
+
+@media screen and (max-width: 400px) {
+    .form{
+        padding: 20px 10px;
+    }
+    
+}
